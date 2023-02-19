@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,600;1,800&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.limited-container {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.limited-container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.limited-container-header-title, .limited-container-header-subtitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.limited-container-header-subtitle {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.navbar {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-size: 1.1rem;
+    overflow: scroll;
+}
+
+.navbar-item {
+    font-size: .9rem;
+    padding: 2px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.navbar-item:hover, .navbar-item-selected {
+    background-color: #1a2b6d;
+    color: aliceblue;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+}
+
+.marqueeingnews {
+    background-color: #1a2b6d;
+    color: aliceblue;
+}
+
+.picturedEvents {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.picturedEvent{
+    display: initial;
+    margin-bottom: 15px;
+    border: 1px solid #1a2b6d;
+    width: 300px;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.picturedEvent:hover {
+    border: 1px solid #1a2b6d;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    transform:scale(1.05);
+}
+
+.picturedEvents-text {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1px;
+    background-color: rgba(255, 255, 255, .8);
+
+}
+
+.picturedEvents-text-title {
+    font-size: 1.1rem;
+    color: #1a2b6d;
+    font-weight: bold;
+}
+
+.footer {
+    font-size: .8rem;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .9);
+}
+
+table {
+    font-size: .9rem;
+}
+
+th, td {
+    text-align: left;
+    padding: 5px;
+}
+
+th:hover {
+    background-color: #1a2b6d;
+    color: aliceblue;
+}
+
+td:hover {
+    background-color: rgb(128, 128, 128, .4);
+}
+
+.committee {
+    text-align: center;
+}
+
+.committee-name {
+    font-size: 1.1rem;
+    color: #1a2b6d;
+    font-weight: bold;
+}
