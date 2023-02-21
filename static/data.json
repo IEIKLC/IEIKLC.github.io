@@ -49,5 +49,32 @@
         ["25", "static/images/crescent.png"],
         ["20", "static/images/saveetha.png"],
         ["25", "static/images/sathyabama.png"]
-    ]
+    ],
+    "AGM": {
+        "2020-2021": {
+            "fullfile": "static/files/AGM2020_21.pdf"
+        }
+    },
+    "newsletter": {
+        "1": {
+            "month": "June",
+            "year": 2017,
+            "file": "static/files/JUNE2017.pdf"
+        },
+        "2": {
+            "month": "October",
+            "year": 2017,
+            "file": "static/files/OCT2017.pdf"
+        },
+        "3": {
+            "month": "April",
+            "year": 2018,
+            "file": "static/files/APR2018.pdf"
+        },
+        "4": {
+            "month": "December",
+            "year": 2018,
+            "file": "static/files/DEC2018.pdf"
+        }
+    }
 }
