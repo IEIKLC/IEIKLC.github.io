@@ -21,12 +21,18 @@
         [1, "Dr. D. Elango", "F-117783-0", "Member", "Chairman", "9444050687", "gangaduraielango@gmail.com", "Professor & HOD Department of Civil, Valliammai Engineering College"]
     ],
     "upcoming_events": [
-        [1, "All Possible effects of Cell phone radiation", "Electronics and Communication Engineering Division", "Dr. E. Vinodha, Professor, ECE Dept, MAM College of Engineering and Technology, Siruganur, Trichy", "IEI Building", "26-11-2019 05:00 PM"]
+        [1, "All Possible effects of Cell phone radiation", "Electronics and Communication Engineering Division", "IEI Building", "26-11-2019 05:00 PM"]
     ],
     "past_events": [
-        [1, "All Possible effects of Cell phone radiation", "Electronics and Communication Engineering Division", "Dr. E. Vinodha, Professor, ECE Dept, MAM College of Engineering and Technology, Siruganur, Trichy", "IEI Building", "26-11-2019 05:00 PM"]
+        [1, "All Possible effects of Cell phone radiation", "Electronics and Communication Engineering Division", "IEI Building", "26-11-2019 05:00 PM"]
     ],
     "gallery": [
+        "ROLLING1.JPG",
+        "ROLLING2.JPG",
+        "ROLLING3.JPG",
+        "ROLLING4.JPG",
+        "ROLLING5.JPG",
+        "ROLLING6.JPG",
         "1.jpg",
         "2.jpg",
         "3.jpg",
@@ -53,6 +59,31 @@
     "AGM": {
         "2020-2021": {
             "fullfile": "static/files/AGM2020_21.pdf"
+        }
+    },
+    "minutesofmeeting": {
+        "January 2023": {
+            "fullfile": "static/files/minutes/JAN2023.pdf"
+        },
+        "December 2022": {
+            "fullfile": "static/files/minutes/DEC2022.pdf"
+        },
+        "November 2022": {
+            "fullfile": "static/files/minutes/NOV2022.pdf"
+        },
+        "October 2022": {
+            "fullfile": "static/files/minutes/OCT2022.pdf"
+        }
+    },
+    "eventreports": {
+        "All India Seminar on “FUNDAMENTALS OF ARTIFICIAL INTELLIGENCE”": {
+            "fullfile": "static/files/eventreports/FUNDAMENTALSOFARTIFICIALINTELLIGENCE.pdf"
+        },
+        "Two Days all India seminar on Application of Artificial Intelligence and Machine Learning in Electrical Engineering": {
+            "fullfile": "static/files/eventreports/DaysallIndiaseminaronApplicationofArtificialIntelligenceandMachineLearninginElectricalEngineering.pdf"
+        },
+        "All India Workshop On Lean Manufacturing to Minimize Waste in Production Systems": {
+            "fullfile": "static/files/eventreports/AllIndiaWorkshopOnManufacturingtoMinimizeWasteinProductionSystems.pdf"
         }
     },
     "newsletter": {

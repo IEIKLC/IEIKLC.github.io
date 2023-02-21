@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Minutes of Meeting | IEI India KLC</title>
+    <link rel="stylesheet" href="/static/styles/home.css">
+    <meta name="viewport" content="width=1200">
+</head>
+
+<body>
+    <div class="limited-container">
+        <div class="limited-container-header">
+            <div>
+                <div>
+                    <!-- <div class="limited-container-header-title">
+                        The Institution of Engineers (India)
+                    </div>
+                    <div class="limited-container-header-subtitle">
+                        Kanchepuram Local Center
+                    </div> -->
+                    <img src="static/images/logofull.png">
+                </div>
+            </div>
+            <img src="/static/images/iei_logo.png" alt="IEI Logo" class="limited-container-header-logo">
+        </div>
+        <div class="navbar">
+            <div class="navbar-item" onclick="window.location.href='/';">Home</div>
+            <div class="navbar-item" onclick="window.location.href='aboutklc.html';">About KLC</div>
+            <div class="navbar-item" onclick="window.location.href='gallery.html'">Gallery
+            </div>
+            <div class="navbar-item" onclick="window.location.href='events.html';">Events</div>
+            <div class="navbar-item" onclick="window.location.href='committee.html';">Committee</div>
+            <div class="navbar-item" onclick="window.location.href='studentchapters.html';">Student Chapters</div>
+            
+            <div class="navbar-item" onclick="window.open('https://www.ieindia.org/webui/IEI-Publication.aspx#IEI-news', '_blank');">News Letter</div>
+            <div class="navbar-item" onclick="window.location.href='contactus.html';">Contact Us</div>
+        </div>
+        <div style="display: flex; gap: 20px; justify-content: space-between;">
+            <div style="width: 10%; padding-top: 4px; padding-bottom: 4px; font-weight: bold;">
+                Announcements
+            </div>
+            <div class="marqueeingnews" style="width: 85%; padding-top: 4px; padding-bottom: 4px;">
+                <marquee id="announcementsparent">
+                    
+                </marquee>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="limited-container">
+        <div style="display: flex; gap: 20px;">
+            <h3>Minutes of Meeting</h3>
+            <select id="byyear" style="background-color: aliceblue !important; font-weight: bold; border: none;">
+            </select>
+        </div>
+        <div class="limited-container">
+            <iframe id="agmfullpdfframe" src="" height="800px" style="display: none;"></iframe>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="footer">
+        &copy; IEI Kanchepuram 2023
+        <!-- Designed and Developed by Nannan A (nanna7077@gmail.com) -->
+    </div>
+</body>
+
+<script src="static/scripts/main.js"></script>
+<script>
+    var currentYear = null;
+    var mainResp = null;
+
+    fetch('static/data.json')
+    .then((resp) => resp.json())
+    .then(
+        (resp) => {
+            mainResp = resp;
+            document.getElementById('byyear').innerHTML=`<option selected disabled>Select timeperiod</option>`;
+            Object.keys(resp.minutesofmeeting).forEach((k)=>{
+                document.getElementById('byyear').innerHTML+=`<option val="`+k+`">`+k+`</option>`;
+            })
+    })
+
+    document.getElementById('byyear').addEventListener('change', (e)=>{
+        currentYear = document.getElementById('byyear').value;
+        triggerChanges();
+    })
+
+    function triggerChanges() {
+        document.getElementById('agmfullpdfframe').style.display = 'block';
+        document.getElementById('agmfullpdfframe').src = mainResp.minutesofmeeting[currentYear].fullfile;   
+    }
+</script>
+</html>
