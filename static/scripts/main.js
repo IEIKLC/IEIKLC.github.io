@@ -2,8 +2,8 @@ fetch('static/data.json')
 .then(resp=>resp.json())
 .then(
     (resp) => {
-        resp.announcements.forEach((a) => {
-            document.getElementById('announcementsparent').innerHTML += `<span>${a}&nbsp;&nbsp;|&nbsp;&nbsp;</span>`;
+        Object.keys(resp.announcements).forEach((k) => {
+            document.getElementById('announcementsparent').innerHTML += `<span><a style="color: #fff; text-decoration: none;" href="${resp.announcements[k].link}">${resp.announcements[k].title}&nbsp;&nbsp;|&nbsp;&nbsp;</a></span>`;
         })
     }
 )

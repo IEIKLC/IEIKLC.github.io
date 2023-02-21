@@ -1,5 +1,18 @@
 {
-    "announcements": ["Announcement 1", "Announcement 2", "Announcement 3"],
+    "announcements": {
+        "1": {
+            "title": "Announcement 1",
+            "link": ""
+        },
+        "2": {
+            "title": "Announcement 2",
+            "link": ""
+        },
+        "3": {
+            "title": "Announcement 3",
+            "link": ""
+        }
+    },
     "committee_large": [
         {
             "name": "Dr. D. Elango, B.E, M.E, Ph.D, FIE",
