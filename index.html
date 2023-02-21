@@ -31,22 +31,19 @@
             <div class="navbar-item" onclick="window.location.href='aboutklc.html';">About KLC</div>
             <div class="navbar-item" onclick="window.location.href='gallery.html'">Gallery</div>
             <div class="navbar-item" onclick="window.location.href='events.html';">Events</div>
-            <div class="navbar-item navbar-item-selected" onclick="window.location.href='committee.html';">Committee</div>
-            <div class="navbar-item">Student Chapters</div>
-            <div class="navbar-item">Asian Book of Records</div>
-            <div class="navbar-item">News Letter</div>
-            <div class="navbar-item">Contact Us</div>
+            <div class="navbar-item" onclick="window.location.href='committee.html';">Committee</div>
+            <div class="navbar-item" onclick="window.location.href='studentchapters.html';">Student Chapters</div>
+            
+            <div class="navbar-item" onclick="window.open('https://www.ieindia.org/webui/IEI-Publication.aspx#IEI-news', '_blank');">News Letter</div>
+            <div class="navbar-item" onclick="window.location.href='contactus.html';">Contact Us</div>
         </div>
         <div style="display: flex; gap: 20px; justify-content: space-between;">
-            <div style="width: 10%; padding-top: 4px; padding-bottom: 4px;">
+            <div style="width: 10%; padding-top: 4px; padding-bottom: 4px; font-weight: bold;">
                 Announcements
             </div>
             <div class="marqueeingnews" style="width: 85%; padding-top: 4px; padding-bottom: 4px;">
-                <marquee>
-                    <span>Announcement 1 &nbsp;&nbsp;|&nbsp;&nbsp;</span>
-                    <span>Announcement 2 &nbsp;&nbsp;|&nbsp;&nbsp;</span>
-                    <span>Announcement 3 &nbsp;&nbsp;|&nbsp;&nbsp;</span>
-                    <span>Announcement 4 &nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                <marquee id="announcementsparent">
+                    
                 </marquee>
             </div>
         </div>
@@ -54,80 +51,73 @@
     <br>
     <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'
         data-flickity='{ "autoPlay": true }'>
-        <img src="static/images/eventimages/1.webp" class="gallery-cell">
-        <img src="static/images/eventimages/2.webp" class="gallery-cell">
-        <img src="static/images/eventimages/3.webp" class="gallery-cell">
-        <img src="static/images/eventimages/4.webp" class="gallery-cell">
+        <img src="static/images/eventimages/1.jpg" class="gallery-cell">
+        <img src="static/images/eventimages/2.jpg" class="gallery-cell">
+        <img src="static/images/eventimages/3.jpg" class="gallery-cell">
+        <img src="static/images/eventimages/4.jpg" class="gallery-cell">
     </div>
     <br><br>
-    <div class="picturedEvents" id="insite-cols">
-        <div class="picturedEvent" style="background-image: url('static/images/eventimages/1.webp');">
-            <div class="picturedEvents-text">
-                <div class="picturedEvents-text-title">
-                    Minutes of Meeting
+    <style>
+        .picturedEvent {
+            width: 400px;
+            height: 248px;
+            background-size: contain;
+        }
+
+        .picturedEvents-text {
+            margin-top: 200px;
+        }
+
+        .picturedEvents-text-title {
+            font-size: 1.2rem;
+        }
+    </style>
+        <div class="picturedEvents" id="insite-cols">
+            <div class="picturedEvent" style="background-image: url('static/images/mainpicbuttons/membership_benifits.jpg');" onclick="window.location.href='membershipbenefits.html';">
+                <div class="picturedEvents-text">
+                    <div class="picturedEvents-text-title">Membership Benefits</div>
+                </div>
+            </div>
+            <div class="picturedEvent" style="background-image: url('static/images/eventimages/1.jpg');" onclick="window.location.href='aboutiei.html';">
+                <div class="picturedEvents-text">
+                    <div class="picturedEvents-text-title">About IEI</div>
+                </div>
+            </div>
+            <div class="picturedEvent" style="background-image: url('static/images/eventimages/1.jpg');" onclick="window.location.href='byelaws.html';">
+                <div class="picturedEvents-text">
+                    <div class="picturedEvents-text-title">Bye-Laws</div>
+                </div>
+            </div>
+            <div class="picturedEvent" style="background-image: url('static/images/eventimages/1.jpg');" onclick="window.location.href='regulations.html';">
+                <div class="picturedEvents-text">
+                    <div class="picturedEvents-text-title">Regulations</div>
+                </div>
+            </div>
+            <div class="picturedEvent" style="background-image: url('static/images/eventimages/1.jpg');" onclick="window.location.href='';">
+                <div class="picturedEvents-text">
+                    <div class="picturedEvents-text-title">AGM Meeting</div>
+                </div>
+            </div>
+            <div class="picturedEvent" style="background-image: url('static/images/eventimages/1.jpg');" onclick="window.location.href='';">
+                <div class="picturedEvents-text">
+                    <div class="picturedEvents-text-title">Minutes of Meeting</div>
                 </div>
             </div>
         </div>
-        <div class="picturedEvent" style="background-image: url('static/images/eventimages/1.webp');">
-            <div class="picturedEvents-text">
-                <div class="picturedEvents-text-title">
-                    AGM Meeting
-                </div>
+        <br><br>
+        <div class="limited-container">
+            <div class="biggerbuttons">
+                <div class="biggerbutton" onclick="window.location.href='https://ieitiruchi.org/IEIHQ/Membership.pdf';">Apply for IEI Membership</div>
+                <div class="biggerbutton" onclick="window.location.href='http://pe.ieindia.org/';">Apply/Renew PE Membership</div>
+                <div class="biggerbutton" onclick="window.location.href='https://www.ieindia.org/webui/IEI-Network.aspx#students-chapters';">All Indian Student Chapters</div>
+                <div class="biggerbutton" onclick="window.location.href='https://37iec.org/';">37<sup>th</sup> Indian Engineering Congress</div>
+                <div class="biggerbutton" onclick="window.location.href='https://www.ieindia.org/webui/IEI-Publication.aspx#springer-journals';">IEI Springer Journals</div>
+                <div class="biggerbutton" onclick="window.location.href='https://www.ieindia.org/webui/IEI-Publication.aspx#IEI-news';">IEI News</div>
+                <div class="biggerbutton" onclick="window.location.href='https://www.ieindia.org/webui/IEI-Publication.aspx#Annual_Report';">Annual Report</div>
+                <div class="biggerbutton" onclick="window.location.href='https://www.ieindia.org/webui/ajax/Downloads/WebUI_PDF/Publication/IEI_Publication_pdf/IEI_Springer_Publication_Schedule_Rates.pdf';">Springer Publication Fees</div>
             </div>
         </div>
-        <div class="picturedEvent" style="background-image: url('static/images/eventimages/1.webp');">
-            <div class="picturedEvents-text">
-                <div class="picturedEvents-text-title">
-                    37<sup>th</sup> Indian Engineering Congress
-                </div>
-            </div>
-        </div>
-    </div>
     <br>
-    <div class="picturedEvents" id="insite-cols">
-        <div class="picturedEvent" style="background-image: url('static/images/eventimages/1.webp');">
-            <div class="picturedEvents-text">
-                <div class="picturedEvents-text-title">
-                    Bye-Laws
-                </div>
-            </div>
-        </div>
-        <div class="picturedEvent" style="background-image: url('static/images/eventimages/1.webp');">
-            <div class="picturedEvents-text">
-                <div class="picturedEvents-text-title">
-                    Regulations
-                </div>
-            </div>
-        </div>
-        <div class="picturedEvent" style="background-image: url('static/images/eventimages/1.webp');">
-            <div class="picturedEvents-text">
-                <div class="picturedEvents-text-title">
-                    Apply for IEI Membership
-                </div>
-            </div>
-        </div>
-        <div class="picturedEvent" style="background-image: url('static/images/eventimages/1.webp');">
-            <div class="picturedEvents-text">
-                <div class="picturedEvents-text-title">
-                    Apply/Renew PE Membership
-                </div>
-            </div>
-        </div>
-        <div class="picturedEvent" style="background-image: url('static/images/eventimages/1.webp');">
-            <div class="picturedEvents-text">
-                <div class="picturedEvents-text-title">
-                    All Indian Student Chapters
-                </div>
-            </div>
-        </div>
-        <div class="picturedEvent" style="background-image: url('static/images/eventimages/1.webp');">
-            <div class="picturedEvents-text">
-                <div class="picturedEvents-text-title">
-                    Membership Benifits
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div class="footer">
         &copy; IEI Kanchepuram 2021
@@ -136,4 +126,5 @@
 
 </body>
 
+<script src="static/scripts/main.js"></script>
 </html>

@@ -29,22 +29,19 @@
             <div class="navbar-item" onclick="window.location.href='gallery.html'">Gallery
             </div>
             <div class="navbar-item navbar-item-selected" onclick="window.location.href='events.html';">Events</div>
-            <div class="navbar-item navbar-item-selected" onclick="window.location.href='committee.html';">Committee</div>
-            <div class="navbar-item">Student Chapters</div>
-            <div class="navbar-item">Asian Book of Records</div>
-            <div class="navbar-item">News Letter</div>
-            <div class="navbar-item">Contact Us</div>
+            <div class="navbar-item" onclick="window.location.href='committee.html';">Committee</div>
+            <div class="navbar-item" onclick="window.location.href='studentchapters.html';">Student Chapters</div>
+            
+            <div class="navbar-item" onclick="window.open('https://www.ieindia.org/webui/IEI-Publication.aspx#IEI-news', '_blank');">News Letter</div>
+            <div class="navbar-item" onclick="window.location.href='contactus.html';">Contact Us</div>
         </div>
         <div style="display: flex; gap: 20px; justify-content: space-between;">
-            <div style="width: 10%; padding-top: 4px; padding-bottom: 4px;">
+            <div style="width: 10%; padding-top: 4px; padding-bottom: 4px; font-weight: bold;">
                 Announcements
             </div>
             <div class="marqueeingnews" style="width: 85%; padding-top: 4px; padding-bottom: 4px;">
-                <marquee>
-                    <span>Announcement 1 &nbsp;&nbsp;|&nbsp;&nbsp;</span>
-                    <span>Announcement 2 &nbsp;&nbsp;|&nbsp;&nbsp;</span>
-                    <span>Announcement 3 &nbsp;&nbsp;|&nbsp;&nbsp;</span>
-                    <span>Announcement 4 &nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                <marquee id="announcementsparent">
+                    
                 </marquee>
             </div>
         </div>
@@ -52,7 +49,7 @@
     <br>
     <div class="limited-container">
         <h3>Upcoming Events</h3>
-        <table>
+        <table id="upevents">
             <tr>
                 <th>Sl no.</th>
                 <th>Topic</th>
@@ -60,21 +57,11 @@
                 <th>Speaker</th>
                 <th>Venue</th>
                 <th>Date & Time</th>
-                <th>Register Link</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>All Possible effects of Cell phone radiation</td>
-                <td>Electronics and Communication Engineering Division</td>
-                <td>Dr. E. Vinodha, Professor, ECE Dept, MAM College of Engineering and Technology, Siruganur, Trichy</td>
-                <td>IEI Building</td>
-                <td>26-11-2019 05:00 PM</td>
-                <td><a href="">Link</a></td>
             </tr>
         </table>
         <br>
         <h3>Past Events</h3>
-        <table>
+        <table id="pevent">
             <tr>
                 <th>Sl no.</th>
                 <th>Topic</th>
@@ -82,14 +69,6 @@
                 <th>Speaker</th>
                 <th>Venue</th>
                 <th>Date & Time</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>All Possible effects of Cell phone radiation</td>
-                <td>Electronics and Communication Engineering Division</td>
-                <td>Dr. E. Vinodha, Professor, ECE Dept, MAM College of Engineering and Technology, Siruganur, Trichy</td>
-                <td>IEI Building</td>
-                <td>26-11-2019 05:00 PM</td>
             </tr>
         </table>
     </div>
@@ -100,4 +79,36 @@
     </div>
 </body>
 
+<script src="static/scripts/main.js"></script>
+<script>
+    fetch('static/data.json')
+    .then((resp) => resp.json())
+    .then(
+        (resp) => {
+            [... resp.upcoming_events].forEach((x)=>{
+                document.getElementById('upevents').innerHTML+=`
+                <tr>
+                    <td>`+x[0]+`</td>
+                    <td>`+x[1]+`</td>
+                    <td>`+x[2]+`</td>
+                    <td>`+x[3]+`</td>
+                    <td>`+x[4]+`</td>
+                    <td>`+x[5]+`</td>
+                </tr>
+                `
+            });
+            [... resp.past_events].forEach((x)=>{
+                document.getElementById('pevent').innerHTML+=`
+                <tr>
+                    <td>`+x[0]+`</td>
+                    <td>`+x[1]+`</td>
+                    <td>`+x[2]+`</td>
+                    <td>`+x[3]+`</td>
+                    <td>`+x[4]+`</td>
+                    <td>`+x[5]+`</td>
+                </tr>
+                `
+            });
+    })
+</script>
 </html>

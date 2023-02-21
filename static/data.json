@@ -1,0 +1,53 @@
+{
+    "announcements": ["Announcement 1", "Announcement 2", "Announcement 3"],
+    "committee_large": [
+        {
+            "name": "Dr. D. Elango, B.E, M.E, Ph.D, FIE",
+            "title": "Chairman",
+            "imgurl": "https://i.postimg.cc/8PHVHNKX/elango.webp"
+        },
+        {
+            "name": "Dr. G. Shanmugasundar, B.E, M.E, Ph.D, FIE",
+            "title": "Honorary Secretary",
+            "imgurl": "https://i.postimg.cc/tJGHrTGw/shanmugasundar.webp"
+        },
+        {
+            "name": "Dr. S. Karthikeyan, B.E, M.E, Ph.D, FIE",
+            "title": "Joint Secretary",
+            "imgurl": "static/images/karth.jpeg"
+        }
+    ],
+    "committee_members": [
+        [1, "Dr. D. Elango", "F-117783-0", "Member", "Chairman", "9444050687", "gangaduraielango@gmail.com", "Professor & HOD Department of Civil, Valliammai Engineering College"]
+    ],
+    "upcoming_events": [
+        [1, "All Possible effects of Cell phone radiation", "Electronics and Communication Engineering Division", "Dr. E. Vinodha, Professor, ECE Dept, MAM College of Engineering and Technology, Siruganur, Trichy", "IEI Building", "26-11-2019 05:00 PM"]
+    ],
+    "past_events": [
+        [1, "All Possible effects of Cell phone radiation", "Electronics and Communication Engineering Division", "Dr. E. Vinodha, Professor, ECE Dept, MAM College of Engineering and Technology, Siruganur, Trichy", "IEI Building", "26-11-2019 05:00 PM"]
+    ],
+    "gallery": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg",
+        "8.jpg",
+        "9.jpg",
+        "11.jpg",
+        "12.jpg",
+        "13.jpg",
+        "14.jpg",
+        "15.jpg",
+        "16.jpg",
+        "17.jpg",
+        "18.jpg"
+    ],
+    "student_chapters": [
+        ["25", "static/images/crescent.png"],
+        ["20", "static/images/saveetha.png"],
+        ["25", "static/images/sathyabama.png"]
+    ]
+}

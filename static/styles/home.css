@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
 }
 
 .limited-container {
@@ -21,7 +22,8 @@ body {
     padding-right: 3%;
 }
 
-.limited-container-header-title, .limited-container-header-subtitle {
+.limited-container-header-title,
+.limited-container-header-subtitle {
     font-size: 1.8rem;
     font-weight: bold;
     letter-spacing: 1.5px;
@@ -38,7 +40,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-size: 1.1rem;
     overflow: scroll;
 }
@@ -50,11 +52,12 @@ body {
     padding-left: 8px;
 }
 
-.navbar-item:hover, .navbar-item-selected {
+.navbar-item:hover,
+.navbar-item-selected {
     background-color: #1a2b6d;
     color: aliceblue;
     cursor: pointer;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
 }
 
@@ -72,7 +75,7 @@ body {
     margin-right: 10%;
 }
 
-.picturedEvent{
+.picturedEvent {
     display: initial;
     margin-bottom: 15px;
     border: 1px solid #1a2b6d;
@@ -85,14 +88,14 @@ body {
 
 .picturedEvent:hover {
     border: 1px solid #1a2b6d;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
-    transform:scale(1.05);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
 }
 
 .picturedEvents-text {
     display: flex;
     justify-content: space-around;
-    margin-top: 1px;
+    margin-top: 120px;
     background-color: rgba(255, 255, 255, .8);
 
 }
@@ -116,7 +119,8 @@ table {
     font-size: .9rem;
 }
 
-th, td {
+th,
+td {
     text-align: left;
     padding: 5px;
 }
@@ -138,4 +142,38 @@ td:hover {
     font-size: 1.1rem;
     color: #1a2b6d;
     font-weight: bold;
+}
+
+.indented-text {
+    tab-size: 4;
+    text-align: justify;
+}
+
+.biggerbuttons {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.biggerbutton {
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 5px;
+    background-color: rgb(236, 236, 236);
+    letter-spacing: 2px;
+    border-radius: 6px;
+    width: fit-content;
+    cursor: pointer;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.biggerbutton:hover {
+    transform: scale(1.05);
+    padding: 7px;
+    padding-left: 18px;
+    padding-right: 18px;
+    background-color: #1a2b6d;
+    color: aliceblue;
 }

@@ -3,17 +3,15 @@
 <html>
 
 <head>
-    <title>Gallery | IEI India KLC</title>
+    <title>Student Chapters | IEI India KLC</title>
     <link rel="stylesheet" href="/static/styles/home.css">
     <meta name="viewport" content="width=1200">
 </head>
 
-<!-- Style Override -->
-
 <style>
     .picturedEvent {
-        width: 450px;
-        height: 225px;
+        width: 400px;
+        height: 200px;
     }
 </style>
 
@@ -35,11 +33,11 @@
         <div class="navbar">
             <div class="navbar-item" onclick="window.location.href='/';">Home</div>
             <div class="navbar-item" onclick="window.location.href='aboutklc.html';">About KLC</div>
-            <div class="navbar-item navbar-item-selected" onclick="window.location.href='gallery.html'">Gallery</div>
+            <div class="navbar-item" onclick="window.location.href='gallery.html'">Gallery
+            </div>
             <div class="navbar-item" onclick="window.location.href='events.html';">Events</div>
             <div class="navbar-item" onclick="window.location.href='committee.html';">Committee</div>
-            <div class="navbar-item" onclick="window.location.href='studentchapters.html';">Student Chapters</div>
-            
+            <div class="navbar-item navbar-item-selected" onclick="window.location.href='studentchapters.html';">Student Chapters</div>
             <div class="navbar-item" onclick="window.open('https://www.ieindia.org/webui/IEI-Publication.aspx#IEI-news', '_blank');">News Letter</div>
             <div class="navbar-item" onclick="window.location.href='contactus.html';">Contact Us</div>
         </div>
@@ -55,7 +53,11 @@
         </div>
     </div>
     <br>
-    <div class="picturedEvents" id="insite-cols">
+    <div class="limited-container">
+        <h3>Student Chapters</h3>
+        <br>
+        <div style="text-align: center;" id="stuimg">
+        </div>
     </div>
     <div class="footer">
         &copy; IEI Kanchepuram 2021
@@ -69,9 +71,10 @@
     .then((resp) => resp.json())
     .then(
         (resp) => {
-            [... resp.gallery].forEach((x)=>{
-                document.getElementById('insite-cols').innerHTML+=`
-                <div class="picturedEvent" style="background-image: url('static/images/eventimages/`+x+`');"></div>
+            [... resp.student_chapters].forEach((x)=>{
+                console.log(x)
+                document.getElementById('stuimg').innerHTML+=`
+                <img style="margin-right: 80px; margin-bottom: 50px; width: `+x[0]+`%; display: inline-block;" src="`+x[1]+`">
                 `;
         })
     })
