@@ -98,13 +98,20 @@
         "18.jpg"
     ],
     "student_chapters": [
-        ["25", "static/images/crescent.png"],
-        ["20", "static/images/saveetha.png"],
-        ["25", "static/images/sathyabama.png"]
+        ["23", "static/images/colleges/crescent.png"],
+        ["25", "static/images/colleges/sathyabama.png"],
+        ["20", "static/images/colleges/saveetha.png"],
+        ["20", "static/images/colleges/sairam.png"],
+        ["25", "static/images/colleges/st_joseph-omr.png"],
+        ["25", "static/images/colleges/jce.png"],
+        ["15", "static/images/colleges/st_joseph_sriperumbudur.png"]
     ],
     "AGM": {
         "2020-2021": {
-            "fullfile": "static/files/AGM2020_21.pdf"
+            "fullfile": "static/files/agm/AGM2020_21.pdf"
+        },
+        "2021-2022": {
+            "fullfile": "static/files/agm/AGM2021_22.pdf"
         }
     },
     "minutesofmeeting": {
