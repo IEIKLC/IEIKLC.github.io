@@ -18,13 +18,46 @@
         }
     ],
     "committee_members": [
-        [1, "Dr. D. Elango", "F-117783-0", "Member", "Chairman", "9444050687", "gangaduraielango@gmail.com", "Professor & HOD Department of Civil, Valliammai Engineering College"]
+        ["1","Dr. D. Elango","F-1+C4117783-0","Chairman","Civil","9444050687","gangaduraielango@gmail.com","Professor & HOD Department of Civil","Valliammai Engineering College"],
+        ["2","Dr.G . Shanmugasundar","F- 128064-5","Honorary Secretary","Mechanical","9941380398","shanmugasundar.mech@sairamit.edu.in","Dean Research & Development,Sri Sairam Institute of Technology"],
+        ["3","Dr. S. Karthikeyan","F-126130 - 0","Joint Secretary","Electronics & Telecommunication","9500412034","karthikeyans.ece@sathyabama.ac.in","Associate Professor, Sathyabama Institute of Science and Technology, chennai, India."],
+        ["4","Ms. P. Dhiviya","M- 1750806","Member","Agriculture","9940751359","dhivyaagrinirri.er@gmail.com","Assistant Professor, Department of Agriculture Engineering,Valliammai Engg College "],
+        ["5","Dr.A.Balasubramanian","M - 1767164","Member","Chemical","9488478235","bala11ap@gmail.com","Associate Professor & HOD, Department of Chemical Engineering, Saveetha Engineering College"],
+        ["6","Mr. R. Sundar","M-148081-7","Member","Computer" ,"9444041854","rsundar@niot.res.in","Ocean data management center, NIOT"],
+        ["7","Dr. Vasnthi padmanabhan","F - 125832 - 6","Member","Civil","9940058415","vasanthi@crescent.education","Professor and dean B S ABDUR RAHMAN CRESCENT INSTITUTE OF SCIENCE AND TECHNOLOGY"],
+        ["8","Mr.M.Duraisami","F-124382-5","Member","Civil","9444398296","mdsa3rama@gmail.com","Chief Engineering Manager - Heavy Civil Infrastructure, L & T Construction"],
+        ["9","Mr.N.Arunprakash","AM-159315-6","Member","Civil","9655452417","arunprakash2688@gmail.com","Assistant Professor, Department of Civil Engineering, Valliammai Engg College"],
+        [ "10", "Dr. G. Thenmozhi", "F- 1266906", "Member", "Electrical ", "9444430864", "gthemozhi@ametuniv.ac.in", "Professor", " AMET UNIVERSITY" ],
+        [ "11", "Dr.G.Madhusudanan", "M-134508-1", "Member", "Electrical ", "9884413903", "madhusudanang.eee@valliammai.co.in", "Assistant Professor", " Department of EEE", "Valliammai Engg College" ],
+        [ "12", "Mrs. Arulmozhi", "M - 175199- 3", "Member", "Environment ", "9940524910", "arulmozhiramces@gmail.com", "Asst. professor Center for Environmental Studies", "Anna University", " Chennai 25" ],
+        [ "13", "Mr. K. Michael Mahesh", "M 1755751", "Member", "Electronics & Telecommunication ", "9176009797", "michael@stjoseph.ac.in", "Ast. Professor/ECE", " St.Joseph's Engineering College", " Sriperumburur." ],
+        [ "15", "Dr. K. Arun vasantha Gethan", "M 159241- 0", "Member", "Mechanical ", "9840009249", "kavgeeth@gmail.com", "Professor & HOD", "Department of Mechanical", " St.Joseph's Institute of Technology" ],
+        [ "16", "Dr. V. Muthukumar", "F-123765-5", "Member", "Mechanical", "9176941555", "muthukumar@saveetha.ac.in", "Professor", " Saveetha Engineering College", " Chennai." ],
+        [ "17", "Prof. S. Venu Gopal", "M159312-3", "Member", "Mining", "9790743343", "venuaumin@gmail.com", "Professor", "Anna University", "Chennai." ],
+        [ "18", "Mr S Jagadeesh", "M- 1767679", "Member", "Production", "9629379116", "jagadeeshs@stjosephstechnology.ac.in", "Assistant Professor St.Joseph's Institute of Technology" ],
+        [ "19", "Er S Kannan (TNSC Chairman)", "F-105130-6", "EX - Officio Member", "Marine", "9847067600", "elasaikannan@gmail.com", "Chairman", " IEI TNSC" ],
+        [ "20", "Er K N Sivaraju (TNSC Secretary)", "M-125275-5", "EX - Officio Member", "Metallurgy& Material Science", "9894043687", "salemiei@rediffmail.com", "Honarary Secretary", " IEI TNSC" ],
+        [ "21", "Er R Ramdoss (Imm Past Chairman - TNSC)", "F-123629-2", "EX - Officio Member", "Production", "9444019091", "ramdoss63@gmail.com", "Chairman", " IEI TNSC - Consulting Engineer " ],
+        [ "22", "Dr. K. Palanikumar (Imm Past KLC Chairman & Member", " State Mech - Division)", "F-116936-6", "EX - Officio Member", "Mechanical", "9677053338", "palanikumar_k@yahoo.com", "Professor & Principal", "SriSairam Institute of Technology " ],
+        [ "23", "Dr R Venkatesan (Council Member)", "F - 111839 -7", "EX - Officio Member", "Mechanical", "9444399829", "dr.r.venkatesan@gmail.com", "Scientist G & Programme director - Head ocean observation systems NIOTMinistry of earth sciences pallikaranal chennai - 600100" ],
+        [ "24", "Dr G Ranganath (TNSC Council Member)", "F-111669-6", "EX - Officio Member", "Mechanical", "9443260071", "vp@adhiyamaan.ac.in", "Principal", "Adhiyamaan College of Engineering", "Hosur" ],
+        [ "25", "Dr.B.Latha ", "F-124979-3", "Eminent Engineer", "Computer ", "9840428435", "sivasoorya2003@yahoo.com", "Professor", " Sri Sairam Engineering College" ],
+        [ "26", "Dr.S.Ramesh", "F-115577-2", "Eminent Engineer", "Mechanical", "9884216363", "Principal@jerusalemengg.ac.in", "Professor & Principal", " Jerusalem College of Engineering" ]
     ],
     "upcoming_events": [
         [1, "All Possible effects of Cell phone radiation", "Electronics and Communication Engineering Division", "IEI Building", "26-11-2019 05:00 PM"]
     ],
     "past_events": [
-        [1, "All Possible effects of Cell phone radiation", "Electronics and Communication Engineering Division", "IEI Building", "26-11-2019 05:00 PM"]
+        [ "1", "Webinar on AR & VR", "Computer Engineering ", "Agni College of Technology Chennai.", "28.01.2021", " "],
+        [ "2", "Webinar on Smart Actuators", "Mechanical Engineering", "SATHYABAMA INSTITUTE OF SCIENCE AND TECHNOLOGY  Chennai", "18.03.2021", " " ],
+        [ "3", "All India Workshop on FEA and FMEA", "Mechanical Engineering ", "St. JOSEPH\u0092S INSTITUTE OF TECHNOLOGY OMR Chennai.-", "12.08.2021-13.08.2021", "IEI Approved"],
+        [ "4", "Webinar on Soft skill Improvement", "Computer Engineering ", "SATHYABAMA INSTITUTE OF SCIENCE AND TECHNOLOGY Chennai", "29.05.2021", " " ],
+        [ "5", "World Environment day", "Mechanical Engineering", "Saveetha Engineering College", "05.06.2021", " " ],
+        [ "6", "Webinar on ROBOTICS ", "Mechanical Engineering", "ST. Joseph\u0092s Institute of Technology Chennai", "10.01.2022", " " ],
+        [ "7", "Webinar on \u0093Beyond the Horizon\u0094", "Mechanical Engineering", "ST. Joseph\u0092s Institute of Technology Chennai", "19.01.2022", " " ],
+        [ "8", "Webinar on quirk of outcome based education", "Civil Engineering", "Sri Sai Ram Engineering College Chennai", "28.01.2022", " " ],
+        [ "9", "Technical Lecture on Trends and Research opportunities in EV Technology", "IEIKLC", "IEIKLC", "28.01.2022", " " ],
+        [ "10", "Webinar on Quiz Competition on Physics", "Mechanical Engineering", "ST. Joseph\u0092s Institute of Technology Chennai", "10.02.2022", " " ]
     ],
     "gallery": [
         "ROLLING1.JPG",
