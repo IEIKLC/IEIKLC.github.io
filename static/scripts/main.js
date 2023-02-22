@@ -7,3 +7,8 @@ fetch('static/data.json', {cache: "no-store"})
         })
     }
 )
+
+favicon = document.createElement('link');
+favicon.rel = 'icon';
+document.head.appendChild(favicon);
+favicon.href = 'static/images/iei_logo.png';
