@@ -70,7 +70,7 @@
     var currentYear = null;
     var mainResp = null;
 
-    fetch('static/data.json')
+    fetch('static/data.json', {cache: "no-store"})
     .then((resp) => resp.json())
     .then(
         (resp) => {

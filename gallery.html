@@ -67,7 +67,7 @@
 
 <script src="static/scripts/main.js"></script>
 <script>
-    fetch('static/data.json')
+    fetch('static/data.json', {cache: "no-store"})
     .then((resp) => resp.json())
     .then(
         (resp) => {
