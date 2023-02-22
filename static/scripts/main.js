@@ -1,3 +1,5 @@
+// Show Announcements
+
 fetch('static/data.json', {cache: "no-store"})
 .then(resp=>resp.json())
 .then(
@@ -7,6 +9,8 @@ fetch('static/data.json', {cache: "no-store"})
         })
     }
 )
+
+// Show Favicon
 
 favicon = document.createElement('link');
 favicon.rel = 'icon';
