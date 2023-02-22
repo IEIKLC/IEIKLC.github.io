@@ -171,6 +171,7 @@ td:hover {
     cursor: pointer;
     padding-left: 14px;
     padding-right: 14px;
+    text-align: center;
 }
 
 .biggerbutton:hover {

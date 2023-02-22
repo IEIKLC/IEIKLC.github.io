@@ -17,7 +17,7 @@
         {
             "name": "Dr. D. Elango, B.E, M.E, Ph.D, FIE",
             "title": "Chairman",
-            "imgurl": "https://i.postimg.cc/8PHVHNKX/elango.webp"
+            "imgurl": "static/images/elango.webp"
         },
         {
             "name": "Dr. G. Shanmugasundar, B.E, M.E, Ph.D, FIE",
@@ -51,7 +51,7 @@
         [ "19", "Er S Kannan (TNSC Chairman)", "F-105130-6", "EX - Officio Member", "Marine", "9847067600", "elasaikannan@gmail.com", "Chairman", " IEI TNSC" ],
         [ "20", "Er K N Sivaraju (TNSC Secretary)", "M-125275-5", "EX - Officio Member", "Metallurgy& Material Science", "9894043687", "salemiei@rediffmail.com", "Honarary Secretary", " IEI TNSC" ],
         [ "21", "Er R Ramdoss (Imm Past Chairman - TNSC)", "F-123629-2", "EX - Officio Member", "Production", "9444019091", "ramdoss63@gmail.com", "Chairman", " IEI TNSC - Consulting Engineer " ],
-        [ "22", "Dr. K. Palanikumar (Imm Past KLC Chairman & Member", " State Mech - Division)", "F-116936-6", "EX - Officio Member", "Mechanical", "9677053338", "palanikumar_k@yahoo.com", "Professor & Principal", "SriSairam Institute of Technology " ],
+        [ "22", "Dr. K. Palanikumar (Imm Past KLC Chairman & Member", "F-116936-6", "State Mech - Division)", "EX - Officio Member", "Mechanical", "9677053338", "palanikumar_k@yahoo.com", "Professor & Principal", "SriSairam Institute of Technology " ],
         [ "23", "Dr R Venkatesan (Council Member)", "F - 111839 -7", "EX - Officio Member", "Mechanical", "9444399829", "dr.r.venkatesan@gmail.com", "Scientist G & Programme director - Head ocean observation systems NIOTMinistry of earth sciences pallikaranal chennai - 600100" ],
         [ "24", "Dr G Ranganath (TNSC Council Member)", "F-111669-6", "EX - Officio Member", "Mechanical", "9443260071", "vp@adhiyamaan.ac.in", "Principal", "Adhiyamaan College of Engineering", "Hosur" ],
         [ "25", "Dr.B.Latha ", "F-124979-3", "Eminent Engineer", "Computer ", "9840428435", "sivasoorya2003@yahoo.com", "Professor", " Sri Sairam Engineering College" ],
