@@ -54,22 +54,22 @@
         [ "26", "Dr.S.Ramesh", "F-115577-2", "Eminent Engineer", "Mechanical", "9884216363", "Principal@jerusalemengg.ac.in", "Professor & Principal", " Jerusalem College of Engineering" ]
     ],
     "upcoming_events": [
-        [1, "All India Seminar on “Remote Sensing & GIS Applications on Water Resources Engineering", "Civil Engineering", "Saveetha Engineering College , Chennai. .", "03.03.2023 & 04.03.2023", "IEI Approved", "https://drive.google.com/file/d/11JMZPb9EyIyj8gtWHhfWAlq_W8unnKPc/view?usp=share_link"],
-        [2, "All India Conference Recent trends in Information and Communication Technology", "Computer Engineering", "Sri Sai Ram Institute of Technology", "15.03.2023 & 16.03.2023.", "IEI Approved", "https://drive.google.com/file/d/1tQpePDDQfVp1wrdxd-5HWSDkroOEDs2N/view?usp=share_link"],
-        [3, "All India workshop on “ Short term training program in Data Science and Machine Learning Visualization", "Computer Engineering", "Sathyabama Institute of Science and Technology , Chennai. .", "03 .04.2023 & 4.04. 2023", "IEI Approved", ""],
-        [4, "All India Workshop on 'Parametric Design using Fusion 360',", "Mechanical Engineering", "Saveetha Engineering College , Chennai. .", "23.03.2023 - 24.03.2023", "IEI Approved", ""]
+        ["All India Workshop on 'Parametric Design using Fusion 360',", "Mechanical Engineering", "Saveetha Engineering College , Chennai. .", "23.03.2023 - 24.03.2023", "IEI Approved", ""],
+        ["All India Conference Recent trends in Information and Communication Technology", "Computer Engineering", "Sri Sai Ram Institute of Technology", "15.03.2023 - 16.03.2023.", "IEI Approved", "https://drive.google.com/file/d/1tQpePDDQfVp1wrdxd-5HWSDkroOEDs2N/view?usp=share_link"],
+        ["All India Seminar on “Remote Sensing & GIS Applications on Water Resources Engineering", "Civil Engineering", "Saveetha Engineering College , Chennai. .", "03.03.2023 - 04.03.2023", "IEI Approved", "https://drive.google.com/file/d/11JMZPb9EyIyj8gtWHhfWAlq_W8unnKPc/view?usp=share_link"],
+        ["All India workshop on “ Short term training program in Data Science and Machine Learning Visualization", "Computer Engineering", "Sathyabama Institute of Science and Technology , Chennai. .", "03.04.2023 - 04.04.2023", "IEI Approved", ""]
     ],
     "past_events": [
-        [ "1", "Webinar on AR & VR", "Computer Engineering ", "Agni College of Technology Chennai.", "28.01.2021", " "],
-        [ "2", "Webinar on Smart Actuators", "Mechanical Engineering", "SATHYABAMA INSTITUTE OF SCIENCE AND TECHNOLOGY  Chennai", "18.03.2021", " " ],
-        [ "3", "All India Workshop on FEA and FMEA", "Mechanical Engineering ", "St. JOSEPH\u0092S INSTITUTE OF TECHNOLOGY OMR Chennai.-", "12.08.2021-13.08.2021", "IEI Approved"],
-        [ "4", "Webinar on Soft skill Improvement", "Computer Engineering ", "SATHYABAMA INSTITUTE OF SCIENCE AND TECHNOLOGY Chennai", "29.05.2021", " " ],
-        [ "5", "World Environment day", "Mechanical Engineering", "Saveetha Engineering College", "05.06.2021", " " ],
-        [ "6", "Webinar on ROBOTICS ", "Mechanical Engineering", "ST. Joseph\u0092s Institute of Technology Chennai", "10.01.2022", " " ],
-        [ "7", "Webinar on \u0093Beyond the Horizon\u0094", "Mechanical Engineering", "ST. Joseph\u0092s Institute of Technology Chennai", "19.01.2022", " " ],
-        [ "8", "Webinar on quirk of outcome based education", "Civil Engineering", "Sri Sai Ram Engineering College Chennai", "28.01.2022", " " ],
-        [ "9", "Technical Lecture on Trends and Research opportunities in EV Technology", "IEIKLC", "IEIKLC", "28.01.2022", " " ],
-        [ "10", "Webinar on Quiz Competition on Physics", "Mechanical Engineering", "ST. Joseph\u0092s Institute of Technology Chennai", "10.02.2022", " " ]
+        ["Webinar on AR & VR", "Computer Engineering ", "Agni College of Technology Chennai.", "28.01.2021", " "],
+        ["Webinar on Smart Actuators", "Mechanical Engineering", "SATHYABAMA INSTITUTE OF SCIENCE AND TECHNOLOGY  Chennai", "18.03.2021", " " ],
+        ["All India Workshop on FEA and FMEA", "Mechanical Engineering ", "St. JOSEPH\u0092S INSTITUTE OF TECHNOLOGY OMR Chennai.-", "12.08.2021-13.08.2021", "IEI Approved"],
+        ["Webinar on Soft skill Improvement", "Computer Engineering ", "SATHYABAMA INSTITUTE OF SCIENCE AND TECHNOLOGY Chennai", "29.05.2021", " " ],
+        ["World Environment day", "Mechanical Engineering", "Saveetha Engineering College", "05.06.2021", " " ],
+        ["Webinar on ROBOTICS ", "Mechanical Engineering", "ST. Joseph\u0092s Institute of Technology Chennai", "10.01.2022", " " ],
+        ["Webinar on \u0093Beyond the Horizon\u0094", "Mechanical Engineering", "ST. Joseph\u0092s Institute of Technology Chennai", "19.01.2022", " " ],
+        ["Webinar on quirk of outcome based education", "Civil Engineering", "Sri Sai Ram Engineering College Chennai", "28.01.2022", " " ],
+        ["Technical Lecture on Trends and Research opportunities in EV Technology", "IEIKLC", "IEIKLC", "28.01.2022", " " ],
+        [ "Webinar on Quiz Competition on Physics", "Mechanical Engineering", "ST. Joseph\u0092s Institute of Technology Chennai", "10.02.2022", " " ]
     ],
     "gallery": [
         "ROLLING1.JPG",

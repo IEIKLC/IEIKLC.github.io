@@ -101,29 +101,33 @@
     .then((resp) => resp.json())
     .then(
         (resp) => {
+            var c = 1;
             [... resp.upcoming_events].forEach((x)=>{
                 document.getElementById('upevents').innerHTML+=`
                 <tr>
-                    <td>`+x[0]+`</td>
-                    <td><a href='`+x[6]+`' target='_blank'>`+x[1]+`</a></td>
+                    <td>`+c+`</td>
+                    <td><a href='`+x[5]+`' target='_blank'>`+x[0]+`</a></td>
+                    <td>`+x[1]+`</td>
                     <td>`+x[2]+`</td>
                     <td>`+x[3]+`</td>
-                    <td>`+x[4]+`</td>
-                    <td><b>`+x[5]+`</b></td>
+                    <td><b>`+x[4]+`</b></td>
                 </tr>
                 `
+                c+=1;
             });
+            c = 1;
             [... resp.past_events].forEach((x)=>{
                 document.getElementById('pevent').innerHTML+=`
                 <tr>
+                    <td>`+c+`</td>
                     <td>`+x[0]+`</td>
                     <td>`+x[1]+`</td>
                     <td>`+x[2]+`</td>
                     <td>`+x[3]+`</td>
-                    <td>`+x[4]+`</td>
-                    <td><b>`+x[5]+`</b></td>
+                    <td><b>`+x[4]+`</b></td>
                 </tr>
                 `
+                c+=1;
             });
     })
 </script>
