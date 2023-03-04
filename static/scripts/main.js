@@ -10,6 +10,27 @@ fetch('static/data.json', {cache: "no-store"})
     }
 )
 
+// Add Navbar
+
+Array.from(document.getElementsByClassName('navbar')).forEach((e) => {
+
+    function ifNavSelected(name) {
+        if (window.location.pathname.replace('/', '') == name) {return "navbar-item-selected"}
+        return ""
+    }
+
+    e.innerHTML = `
+        <div class="navbar-item `+ifNavSelected('')+`" onclick="window.location.href='/';">Home</div>
+        <div class="navbar-item `+ifNavSelected('aboutiei')+`" onclick="window.location.href='aboutiei';">About IEI</div>
+        <div class="navbar-item `+ifNavSelected('aboutklc')+`" onclick="window.location.href='aboutklc';">About KLC</div>
+        <div class="navbar-item `+ifNavSelected('committee')+`" onclick="window.location.href='committee';">Committee</div>
+        <div class="navbar-item `+ifNavSelected('studentchapters')+`" onclick="window.location.href='studentchapters';">Student Chapters</div>        
+        <div class="navbar-item `+ifNavSelected('events')+`" onclick="window.location.href='events';">Events</div>
+        <div class="navbar-item `+ifNavSelected('gallery')+`" onclick="window.location.href='gallery'">Gallery</div>
+        <div class="navbar-item `+ifNavSelected('contactus')+`" onclick="window.location.href='contactus';">Contact Us</div>
+    `;
+})
+
 // Show Favicon
 
 favicon = document.createElement('link');

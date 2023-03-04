@@ -39,17 +39,7 @@
             </div>
             <img src="/static/images/iei_logo.png" alt="IEI Logo" class="limited-container-header-logo">
         </div>
-        <div class="navbar">
-            <div class="navbar-item" onclick="window.location.href='/';">Home</div>
-            <div class="navbar-item navbar-item-selected" onclick="window.location.href='aboutklc';">About KLC</div>
-            <div class="navbar-item" onclick="window.location.href='gallery'">Gallery</div>
-            <div class="navbar-item" onclick="window.location.href='events';">Events</div>
-            <div class="navbar-item" onclick="window.location.href='committee';">Committee</div>
-            <div class="navbar-item" onclick="window.location.href='studentchapters';">Student Chapters</div>
-            
-            <div class="navbar-item" onclick="window.open('https://www.ieindia.org/webui/IEI-Publication.aspx#IEI-news', '_blank');">News Letter</div>
-            <div class="navbar-item" onclick="window.location.href='contactus';">Contact Us</div>
-        </div>
+        <div class="navbar"></div>
         <div style="display: flex; gap: 20px; justify-content: space-between;">
             <div style="width: 10%; padding-top: 4px; padding-bottom: 4px; font-weight: bold;">
                 Announcements
@@ -75,6 +65,26 @@
             Kanchepuram Local Centre has 2661 corporate members, 3000 student members and 104 Institutional Members. The Kanchepuram Local Centre is presently located at Jerusalem College of Engineering which is close proximity to OMR, GST Road and Velachery Railway Station. It regularly organizes technical lectures, National Conference, National Seminars, All India workshop in the various discipline in the fields on Engineering, and Topics latest advance techniques. Industrial visits are also arranged to industries to promote technical interaction among the members and the industries. The statutory programme, like International / National events like. World Water Day, World Telecommunication and Information Society Day, World Environment Day and Engineers Day etc. are celebrated in a fitting manner by organizing technical talks on the selected themes by experts of the field. Institution of Engineers (India) Kanchepuram Local Centre confers, Outstanding Engineer Award, Young Achiever Award, Best IE(I) Student Chapter Award, Best Student Award to Engineering and Polytechnic Student Members of IEI every year. The Kanchepuram Local Centre supports with eminent Technical programmes and financial grants for various events organized by the Institution and Industry located in and around Kanchepuram District.
         </div>
     </div>
+    <br><br>
+    <div class="limited-container">
+        <h3>Previous Committee Heads</h3>
+        <div style="" id="pastmem"></div>
+    </div>
+    <br><br>
+    <div class="limited-container">
+        <h3>More Links</h3>
+        <style>
+            .biggerbutton {
+                border: .2px solid black;
+            }
+        </style>
+        <div class="biggerbuttons">
+            <div class="biggerbutton" onclick="window.location.href='agmmeeting';">AGM Meeting</div>
+            <div class="biggerbutton" onclick="window.location.href='newsletter';">Newsletter</div>
+            <div class="biggerbutton" onclick="window.location.href='minutes';">Minutes of Meeting</div>
+            <div class="biggerbutton" onclick="window.location.href='eventreports';">Event Reports</div>
+        </div>
+    </div>
     <br><br><br>
     <div class="footer">
         &copy; IEI Kanchepuram 2023
@@ -83,4 +93,34 @@
 </body>
 
 <script src="static/scripts/main.js"></script>
+<script>
+    fetch('static/data.json', {cache: "no-store"})
+    .then((resp) => resp.json())
+    .then(
+        (resp) => {
+            Object.keys(resp.committee_past).forEach((k)=>{
+                let x_lst = resp.committee_past[k];
+                var xpar = '<div class="limited-container">';
+                xpar+=`<h3>`+k+`</h3>`;
+                var ndiv = `<div style="display: flex; gap: 20px; justify-content: space-between;">`;
+                x_lst.forEach((x)=>{
+                    ndiv+=`
+                    <div>
+                        <center>
+                            <img src="`+x.imgurl+`" style="width: 170px;">
+                            <div class="committee">
+                                <div class="committee-name">`+x.name+`</div>
+                                <div class="committee-position">`+x.title+`</div>
+                            </div>
+                        </center>
+                    </div>
+                    `
+                });
+                ndiv+=`</div>`;
+                xpar+=ndiv;
+                xpar+='</div><br>';
+                document.getElementById('pastmem').innerHTML+=xpar;
+            });
+        })
+</script>
 </html>
