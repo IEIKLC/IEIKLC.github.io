@@ -26,6 +26,37 @@
             "imgurl": "static/images/karth.jpeg"
         }
     ],
+    "committee_past": {
+        "2018 - 2020": [
+            {
+                "name": "Dr. K. Palanikumar, B.E, M.E, Ph.D, FIE",
+                "title": "Chairman",
+                "imgurl": "static/images/prevcomm/kpalanikumar.jpg"
+            },
+            {
+                "name": "Dr. Srinivasan Alavandar, B.E, M.E, Ph.D, FIE",
+                "title": "Honorary Secretary",
+                "imgurl": "static/images/prevcomm/srinivasanalavandar.png"
+            }
+        ],
+        "2017 - 2018": [
+            {
+                "name": "Dr. Venkatesan R, B.E, M.E, Ph.D, FIE",
+                "title": "Chairman",
+                "imgurl": "static/images/prevcomm/venkatesanr.jpg"
+            },
+            {
+                "name": "Dr. S.R.R. Senthil Kumar, B.E, M.E, Ph.D, FIE",
+                "title": "Honorary Secretary",
+                "imgurl": "static/images/prevcomm/srrsenthilkumar.png"
+            },
+            {
+                "name": "Ramamoorthy, B.E, M.E, Ph.D, FIE",
+                "title": "Joint Secretary",
+                "imgurl": "static/images/prevcomm/rammoorthy.png"
+            }
+        ]
+    },
     "committee_members": [
         ["1","Dr. D. Elango","F-1+C4117783-0","Chairman","Civil","9444050687","gangaduraielango@gmail.com","Professor & HOD Department of Civil","Valliammai Engineering College"],
         ["2","Dr.G . Shanmugasundar","F- 128064-5","Honorary Secretary","Mechanical","9941380398","shanmugasundar.mech@sairamit.edu.in","Dean Research & Development,Sri Sairam Institute of Technology"],
@@ -128,14 +159,17 @@
         }
     },
     "eventreports": {
+        "Engineer's Day Event at Abdur Rahman Crescent Engineering College on 15-09-2022": {
+            "fullfile": "static/files/eventreports/EngineersDayEventatAbdurRahmanCrescentEngineeringCollege15092022.pdf"
+        },
+        "All India Workshop On Lean Manufacturing to Minimize Waste in Production Systems": {
+            "fullfile": "static/files/eventreports/AllIndiaWorkshopOnManufacturingtoMinimizeWasteinProductionSystems.pdf"
+        },
         "All India Seminar on “FUNDAMENTALS OF ARTIFICIAL INTELLIGENCE”": {
             "fullfile": "static/files/eventreports/FUNDAMENTALSOFARTIFICIALINTELLIGENCE.pdf"
         },
         "Two Days all India seminar on Application of Artificial Intelligence and Machine Learning in Electrical Engineering": {
             "fullfile": "static/files/eventreports/DaysallIndiaseminaronApplicationofArtificialIntelligenceandMachineLearninginElectricalEngineering.pdf"
-        },
-        "All India Workshop On Lean Manufacturing to Minimize Waste in Production Systems": {
-            "fullfile": "static/files/eventreports/AllIndiaWorkshopOnManufacturingtoMinimizeWasteinProductionSystems.pdf"
         }
     },
     "newsletter": {
