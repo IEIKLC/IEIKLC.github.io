@@ -27,43 +27,46 @@
 
 <style>
     .picturedEvent {
-        width: 450px;
+        width: 320px;
         height: 225px;
     }
 </style>
 
 <body>
-    <div class="limited-container">
-        <div class="limited-container-header">
-            <div>
-                <div>
-                    <!-- <div class="limited-container-header-title">
-                        The Institution of Engineers (India)
+    <div style="display: none; margin-left: 5%; margin-right: 5%; position: fixed; z-index: 1; width: 80vw; height: 80vh; background: url('static/images/eventimages/1.jpg'); background-size: contain; background-position-y: center; background-repeat: no-repeat;" id="biggerDisplayModel"></div>
+    <div id="thispage">
+            <div class="limited-container">
+                    <div class="limited-container-header">
+                        <div>
+                            <div>
+                                <!-- <div class="limited-container-header-title">
+                                    The Institution of Engineers (India)
+                                </div>
+                                <div class="limited-container-header-subtitle">
+                                    Kanchepuram Local Center
+                                </div> -->
+                                <img src="static/images/logofull.png">
+                            </div>
+                        </div>
+                        <img src="/static/images/iei_logo.png" alt="IEI Logo" class="limited-container-header-logo">
                     </div>
-                    <div class="limited-container-header-subtitle">
-                        Kanchepuram Local Center
-                    </div> -->
-                    <img src="static/images/logofull.png">
+                    <div class="navbar"></div>
+                    <div style="display: flex; gap: 20px; justify-content: space-between;">
+                        <div style="width: 10%; padding-top: 4px; padding-bottom: 4px; font-weight: bold;">
+                            Announcements
+                        </div>
+                        <div class="marqueeingnews" style="width: 85%; padding-top: 4px; padding-bottom: 4px;">
+                            <marquee id="announcementsparent" onmouseover="this.stop()" onmouseout="this.start()">
+                                
+                            </marquee>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <img src="/static/images/iei_logo.png" alt="IEI Logo" class="limited-container-header-logo">
-        </div>
-        <div class="navbar"></div>
-        <div style="display: flex; gap: 20px; justify-content: space-between;">
-            <div style="width: 10%; padding-top: 4px; padding-bottom: 4px; font-weight: bold;">
-                Announcements
-            </div>
-            <div class="marqueeingnews" style="width: 85%; padding-top: 4px; padding-bottom: 4px;">
-                <marquee id="announcementsparent" onmouseover="this.stop()" onmouseout="this.start()">
-                    
-                </marquee>
-            </div>
-        </div>
+                <br>
+                <div class="picturedEvents" id="insite-cols">
+                </div>
+                <br><br><br>
     </div>
-    <br>
-    <div class="picturedEvents" id="insite-cols">
-    </div>
-    <br><br><br>
     <div class="footer">
         &copy; IEI Kanchepuram 2023
         <!-- Designed and Developed by Nannan A (nanna7077@gmail.com) -->
@@ -72,14 +75,39 @@
 
 <script src="static/scripts/main.js"></script>
 <script>
+    var isFirstOutClick = true;
+
+    function closeModel() {
+        if (isFirstOutClick) {
+            isFirstOutClick = false;
+            return;
+        }
+        document.getElementById("biggerDisplayModel").style.display = 'none';
+        document.getElementById("thispage").style.opacity = '1';
+        document.getElementById("thispage").removeEventListener("click", closeModel);
+        document.getElementById("biggerDisplayModel").removeEventListener("click", closeModel);
+        isFirstOutClick = true;
+    }
+    function openBigDisplayModel(imgname) {
+        document.getElementById("biggerDisplayModel").style.display = 'block';
+        document.getElementById("biggerDisplayModel").style.background = "url('static/images/eventimages/"+imgname+"')";
+        document.getElementById("biggerDisplayModel").style.backgroundSize = 'contain';
+        document.getElementById("biggerDisplayModel").style.backgroundPositionX = 'center';
+        document.getElementById("biggerDisplayModel").style.backgroundPositionY = 'center';
+        document.getElementById("biggerDisplayModel").style.backgroundRepeat = 'no-repeat';
+        document.getElementById("thispage").style.opacity = '.5';
+        
+        document.getElementById("biggerDisplayModel").addEventListener("click", closeModel);
+        document.getElementById("thispage").addEventListener("click", closeModel);
+    }
+
     fetch('static/data.json', {cache: "no-store"})
     .then((resp) => resp.json())
     .then(
         (resp) => {
             [... resp.gallery].forEach((x)=>{
                 document.getElementById('insite-cols').innerHTML+=`
-                <div class="picturedEvent" style="background-image: url('static/images/eventimages/`+x+`');"></div>
-                `;
+                <div onclick="openBigDisplayModel('`+x[0]+`');" class="picturedEvent" style="background-image: url('static/images/eventimages/`+x[0]+`'); background-position: center; background-size: contain; background-repeat: no-repeat;"><div style="margin-top: 60%; background-color: rgba(255, 255, 255, .6); text-align: center; font-size: .7rem; font-weight: 600;">`+ x[1]+`</div></div>`;
         })
     })
 </script>
