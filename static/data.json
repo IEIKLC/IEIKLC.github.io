@@ -1,12 +1,8 @@
 {
     "announcements": {
         "1": {
-            "title": "All India Seminar on “Remote Sensing & GIS Applications on Water Resources Engineering at Saveetha Engineering College, Chennai on 3rd to 4th March 2023",
-            "link": "https://drive.google.com/file/d/11JMZPb9EyIyj8gtWHhfWAlq_W8unnKPc/view?usp=share_link"
-        },
-        "2": {
-            "title": "All India Conference Recent trends in Information and Communication Technology at Sri Sai Ram Engineering College, Chennai on 15th to 16th March 2023",
-            "link": "https://drive.google.com/file/d/1tQpePDDQfVp1wrdxd-5HWSDkroOEDs2N/view?usp=share_link"
+            "title": "AGM Meeting will be held on 30th October, 2023 - 10:00 AM at Remibai Jeppiar Auditorium, Sathyabama Institute of Science and Technology.",
+            "link": "#"
         }
     },
     "committee_large": [
@@ -85,6 +81,7 @@
         [ "26", "Dr.S.Ramesh", "F-115577-2", "Eminent Engineer", "Mechanical", "9884216363", "Principal@jerusalemengg.ac.in", "Professor & Principal", " Jerusalem College of Engineering" ]
     ],
     "upcoming_events": [
+        ["AGM Meeting will be held on 30th October, 2023 - 10:00 AM at Remibai Jeppiar Auditorium, Sathyabama Institute of Science and Technology.", "General", "Sathyabama Institute of Science and Technology", "30.10.2023", "", ""]
     ],
     "past_events": [
         ["All India Workshop on 'Parametric Design using Fusion 360',", "Mechanical Engineering", "Saveetha Engineering College , Chennai. .", "23.03.2023 - 24.03.2023", "IEI Approved", ""],
