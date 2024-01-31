@@ -1,24 +1,19 @@
 {
     "announcements": {
         "1": {
-            "title": "AGM Meeting will be held on 30th October, 2023 - 10:00 AM at Remibai Jeppiar Auditorium, Sathyabama Institute of Science and Technology.",
+            "title": "No new announcements.",
             "link": "#"
         }
     },
     "committee_large": [
         {
-            "name": "Dr. D. Elango, B.E, M.E, Ph.D, FIE",
+            "name": "Dr. Ramesh S, B.E., M.Tech., Ph.D",
             "title": "Chairman",
-            "imgurl": "static/images/elango.webp"
-        },
-        {
-            "name": "Dr. G. Shanmugasundar, B.E, M.E, Ph.D, FIE",
-            "title": "Honorary Secretary",
-            "imgurl": "https://i.postimg.cc/tJGHrTGw/shanmugasundar.webp"
+            "imgurl": "static/images/ramesh-s.jpg"
         },
         {
             "name": "Dr. S. Karthikeyan, B.E, M.E, Ph.D, FIE",
-            "title": "Joint Secretary",
+            "title": "Honorary Secretary",
             "imgurl": "static/images/karth.jpeg"
         }
     ],
@@ -200,7 +195,22 @@
         ["13.jpeg", "100 Hour's Program at St.Joseph's Institute of Technology"],
         ["14.jpeg", "100 Hour's Program at St.Joseph's Institute of Technology"],
         ["15.jpeg", "100 Hour's Program at St.Joseph's Institute of Technology"],
-        ["16.jpeg", "100 Hour's Program at St.Joseph's Institute of Technology"]
+        ["16.jpeg", "100 Hour's Program at St.Joseph's Institute of Technology"],
+        ["48.jpeg", "Event at St. Joseph's Institute of Technology"],
+        ["49.jpeg", "Event at St. Joseph's Institute of Technology"],
+        ["50.jpeg", "Annual General Meeting at Sathyabama Institute of Science and Technology"],
+        ["51.jpeg", "Annual General Meeting at Sathyabama Institute of Science and Technology"],
+        ["52.jpeg", "Annual General Meeting at Sathyabama Institute of Science and Technology"],
+        ["53.jpeg", "Annual General Meeting at Sathyabama Institute of Science and Technology"],
+        ["54.jpeg", "Annual General Meeting at Sathyabama Institute of Science and Technology"],
+        ["55.jpeg", "Annual General Meeting at Sathyabama Institute of Science and Technology"],
+        ["56.jpeg", "Annual General Meeting at Sathyabama Institute of Science and Technology"],
+        ["57.jpeg", "Annual General Meeting at Sathyabama Institute of Science and Technology"],
+        ["58.jpeg", "Annual General Meeting at Sathyabama Institute of Science and Technology"],
+        ["59.jpeg", "Annual General Meeting at Sathyabama Institute of Science and Technology"],
+        ["60.jpeg", "Annual General Meeting at Sathyabama Institute of Science and Technology"],
+        ["61.jpeg", "Annual General Meeting at Sathyabama Institute of Science and Technology"],
+        ["62.jpeg", "Annual General Meeting at Sathyabama Institute of Science and Technology"]
     ],
     "student_chapters": [
         ["23", "static/images/colleges/crescent.png"],
